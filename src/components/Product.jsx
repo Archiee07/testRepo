@@ -121,8 +121,6 @@ function Product() {
     }
 
     return (
-
-
         <section className="h-100 gradient-custom">
             <MDBContainer className="py-0 h-100">
                 <MDBRow className="justify-content-center my-2">

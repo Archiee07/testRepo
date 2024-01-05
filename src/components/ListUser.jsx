@@ -162,8 +162,9 @@ class ListUser extends Component {
 
     render() {
 
-        return (<>
+        return ( <section className="h-100 gradient-custom">
             <MDBContainer class="d-flex justify-content-center">
+            <MDBRow className="justify-content-center my-2">
                 <MDBCard className='w-100' style={{ borderRadius: '25px' }}>
                     <MDBCardBody>
                         <MDBRow>
@@ -343,15 +344,14 @@ class ListUser extends Component {
                                 </MDBRow>
                             </MDBContainer>
                         </MDBModalBody>
-
                         <MDBModalFooter class="text-danger text-center ">
                             For any data discrepancy, please click on EDIT icon and update the correct & latest details
                         </MDBModalFooter>
                     </MDBModalContent>
                 </MDBModalDialog>
             </MDBModal>
-                
-            </MDBContainer>
+            </MDBRow>
+        </MDBContainer>
             <div>
                 <MDBModal staticBackdrop show={this.state.editModal} setShow={this.state.editModal} tabIndex='-1'>
                     <MDBModalDialog >
@@ -386,7 +386,7 @@ class ListUser extends Component {
                 </MDBModal >
             </div >
 
-        </>
+        </section>
         )
     }
 } export default ListUser

@@ -83,9 +83,9 @@ export default function ProfileViewPage() {
     function edit_toggleShow() { seteditModal(!editModal); }
 
 
-    return (
+    return ( <section className="h-100 gradient-custom">
         <MDBContainer className="py-1">
-            <MDBRow>
+        <MDBRow className="justify-content-center my-2">
                 <MDBCol lg="3">
                     <MDBCard className="mb-4">
                         <MDBCardBody className="text-center">
@@ -297,5 +297,6 @@ export default function ProfileViewPage() {
                 </MDBModal >
             </div >
         </MDBContainer>
+         </section>
     );
 }

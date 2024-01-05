@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "proxy": "https://localhost:44330/",
-  "homepage": "https://archiee07.github.i/demo/#",
+  "homepage": "https://archiee07.github.i/testRepo/#",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

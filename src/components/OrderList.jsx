@@ -66,8 +66,9 @@ function OrderList() {
 
 
     return (
-        <section>
+        <section className="h-100 gradient-custom">
             <MDBContainer class="d-flex justify-content-center">
+            <MDBRow className="justify-content-center my-2">
                 <MDBCard className='w-100' style={{ borderRadius: '25px' }}>
                     <MDBCardBody>
                         <MDBRow>
@@ -121,6 +122,7 @@ function OrderList() {
                         </MDBRow>
                     </MDBCardBody>
                 </MDBCard>
+                </MDBRow>
             </MDBContainer>
             <div>
                 <MDBModal staticBackdrop show={editModal} setShow={editModal} tabIndex='-1'>
@@ -209,7 +211,6 @@ function OrderList() {
                                             </MDBCardBody>
                                         </MDBCard>
                                     </MDBContainer>
-
                                 </div>
                             </MDBModalBody>
                         </MDBModalContent>
